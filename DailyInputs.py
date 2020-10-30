@@ -1,12 +1,17 @@
 import pandas as pd
 ###################
+#Functions
+###################
+def save_csv():
+  df = pd.DataFrame(varInput, columns=['Balance', 'Entertainment', 'Food', 'Gifts', 'Misc', 'Personal', 'Savings', 'Subscriptions', 'Transportation'])
+  df.to_csv(r'Tracking.csv', mode='a', index = False, header=False)
+###################
 #Cash additions
 ###################
 print("Please enter any cash gained.")
 cashIn = input()
 varInput = {'Balance': [cashIn]}
-df = pd.DataFrame(varInput, columns=['Balance'])
-df.to_csv(r'CashIn.csv', mode='a', header=False)
+save_csv()
 
 
 
@@ -27,78 +32,49 @@ while 1 == 1:
     #Entertainment
     ###################
   elif typeIn == "Entertainment":
-    varInput = {'Cost': [costIn]}
-
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Entertainment.csv', mode='a', header=False)
+    varInput = {'Entertainment': [costIn]}
+    save_csv()
     ###################
     #Food
     ###################
   elif typeIn == "Food":
-    varInput = {'Cost': [costIn]}
+    varInput = {'Food': [costIn]}
 
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Food.csv', mode='a', header=False)
+    save_csv()
 
     ###################
     #Gifts
     ###################
   elif typeIn == "Gifts":
-    varInput = {'Cost': [costIn]}
-
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Gifts.csv', mode='a', header=False)
-
+    varInput = {'Gifts': [costIn]}
+    save_csv()
     ###################
     #Misc
     ###################
   elif typeIn == "Misc":
-    varInput = {'Cost': [costIn]}
-
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Misc.csv', mode='a', header=False)
-
-
+    varInput = {'Misc': [costIn]}
+    save_csv()
     ###################
     #Personal
     ###################
   elif typeIn == "Personal":
-    varInput = {'Cost': [costIn]}
-
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Personal.csv', mode='a', header=False)
-
+    varInput = {'Personal': [costIn]}
+    save_csv()
     ###################
     #Savings
     ###################
   elif typeIn == "Savings":
-    varInput = {'Cost': [costIn]}
-
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Savings.csv', mode='a', header=False)
-
+    varInput = {'Savings': [costIn]}
+    save_csv()
    ###################
     #Subscriptions
     ###################
   elif typeIn == "Subscriptions":
-    varInput = {'Cost': [costIn]}
-
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Subscriptions.csv', mode='a', header=False)
-
+    varInput = {'Subscriptions': [costIn]}
+    save_csv()
     ###################
     #Transportation
     ###################
   elif typeIn == "Transportation":
-    varInput = {'Cost': [costIn]}
-
-    df = pd.DataFrame(varInput, columns=['Cost'])
-
-    df.to_csv(r'Transportation.csv', mode='a', header=False)
+    varInput = {'Transportation': [costIn]}
+    save_csv()
