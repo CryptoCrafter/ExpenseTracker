@@ -24,6 +24,25 @@ test = ["pytest (>=4.0.2)", "pytest-xdist", "hypothesis (>=3.58)"]
 
 [[package]]
 category = "main"
+description = "GUI SDK Launched in 2018. It's 2020 and PySimpleGUI is actively developed and supported. Super-simple to create custom GUI's. 200+ Demo programs & Cookbook for rapid start. Extensive documentation. Main doc is www.PySimpleGUI.org.  Examples using Machine Learning(GUI, OpenCV Integration,  Chatterbot), Rainmeter Style Floating Desktop Widgets, Matplotlib + Pyplot integration, add GUI to command line scripts, PDF & Image Viewer. Great for beginners as well as advanced GUI programmers"
+name = "pysimplegui"
+optional = false
+python-versions = "*"
+version = "4.30.0"
+
+[[package]]
+category = "main"
+description = "A port of PySimpleGUI that runs in a web browser.  Utilizes Remi as the GUI framework"
+name = "pysimpleguiweb"
+optional = false
+python-versions = "*"
+version = "0.39.0"
+
+[package.dependencies]
+remi = "<=2020.3.10"
+
+[[package]]
+category = "main"
 description = "Extensions to the standard Python datetime module"
 name = "python-dateutil"
 optional = false
@@ -43,6 +62,14 @@ version = "2020.1"
 
 [[package]]
 category = "main"
+description = "Python REMote Interface library"
+name = "remi"
+optional = false
+python-versions = "*"
+version = "2020.3.10"
+
+[[package]]
+category = "main"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
@@ -58,7 +85,7 @@ python-versions = "*"
 version = "1.3.0"
 
 [metadata]
-content-hash = "d809d1cb875503bf0f03b4172904818877e56f52b2eff27441bec8df8d43fc8a"
+content-hash = "f0d6b3ddc01d83884a5e1ea444efacad16bbd9c08e5158d8dc2a7fcba76a5ef4"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -124,6 +151,14 @@ pandas = [
     {file = "pandas-1.1.3-cp39-cp39-win_amd64.whl", hash = "sha256:11c284769f41e95f7d16a327eb555989c5f29418aad075fa80c97ef3aa8fb885"},
     {file = "pandas-1.1.3.tar.gz", hash = "sha256:babbeda2f83b0686c9ad38d93b10516e68cdcd5771007eb80a763e98aaf44613"},
 ]
+pysimplegui = [
+    {file = "PySimpleGUI-4.30.0-py3-none-any.whl", hash = "sha256:181b9e65e9ddb4e85c1f0ffaff0d0c7ade0d1571158a4a979ebd4e006d870533"},
+    {file = "PySimpleGUI-4.30.0.tar.gz", hash = "sha256:9d8e6b8c4996c2478191b66559f00ef25f366e17ed709b5f6aa6a35a8f490e4f"},
+]
+pysimpleguiweb = [
+    {file = "PySimpleGUIWeb-0.39.0-py3-none-any.whl", hash = "sha256:b9ed4667105a182b7121c1f2106af3eefc49ef4e1ca55555ba588ab3ba517419"},
+    {file = "PySimpleGUIWeb-0.39.0.tar.gz", hash = "sha256:bf678836226fc8450c965fb209bfb04809bbf6275139aa5a71808b07a3fa32c5"},
+]
 python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
@@ -131,6 +166,10 @@ python-dateutil = [
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
     {file = "pytz-2020.1.tar.gz", hash = "sha256:c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048"},
+]
+remi = [
+    {file = "remi-2020.3.10-py3-none-any.whl", hash = "sha256:73e833090298b446dcb4269ce9ab8078a080db235b4d33674a481c88cb4af1cc"},
+    {file = "remi-2020.3.10.tar.gz", hash = "sha256:4cb8eee398502f547b1ea5cf19304ce46bdc537a29b79066fda3e5d05130fdc4"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
